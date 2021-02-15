@@ -1,0 +1,81 @@
+# Created at 2020-11-21T13:56:24.068
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-11-21T13:56:24.938
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:27.994
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:30.998
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:34.015
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:37.025
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:40.031
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:43.098
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:46.118
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:49.132
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:52.139
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:55.146
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+
+# Created at 2020-11-21T13:56:58.158
+Unexpected IOException with stream: 
+These are all the possible moves for X from the initial state: 
+
+
+

@@ -1,0 +1,63 @@
+# Created at 2020-11-21T14:04:59.474
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2020-11-21T14:05:09.233
+Unexpected IOException: 6,1,TestClasses,testPlay2,null,null,null
+
+
+# Created at 2020-11-21T14:05:09.236
+Unexpected IOException: 5,1,TestClasses,testPlay3,null,null,null
+
+
+# Created at 2020-11-21T14:05:09.239
+Unexpected IOException with stream: Testing
+
+# Created at 2020-11-21T14:05:14.492
+Unexpected IOException: 6,1,TestClasses,testPlay3,null,null,null
+
+
+# Created at 2020-11-21T14:05:14.498
+Unexpected IOException: 5,1,TestClasses,testPlay,null,null,null
+
+
+# Created at 2020-11-21T14:05:14.503
+Unexpected IOException with stream: Testing
+
+# Created at 2020-11-21T14:05:23.659
+Unexpected IOException: 6,1,TestClasses,testPlay,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.666
+Unexpected IOException: 5,1,TestClasses,testEvaluateWinning2,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.673
+Unexpected IOException: 6,1,TestClasses,testEvaluateWinning2,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.679
+Unexpected IOException: 5,1,TestClasses,testSwitchBoard,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.684
+Unexpected IOException: 6,1,TestClasses,testSwitchBoard,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.688
+Unexpected IOException: 5,1,TestClasses,testSwitchBoard2,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.693
+Unexpected IOException: 6,1,TestClasses,testSwitchBoard2,null,null,null
+
+
+# Created at 2020-11-21T14:05:23.701
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,TestClasses,null,null,null
+
+

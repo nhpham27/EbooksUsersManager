@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="main" alignment="TOP_CENTER" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="MainController">
+  <children>
+    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#viewBooks" text="View Books" />
+        <Button mnemonicParsing="false" onAction="#viewUsers" text="View Users" />
+        <Button mnemonicParsing="false" onAction="#viewMyBooks" text="My Books" />
+        <Button mnemonicParsing="false" onAction="#addBook" text="Add Book" />
+        <Button mnemonicParsing="false" onAction="#deleteBook" text="Delete Book" />
+      </children>
+    </HBox>
+    <ListView fx:id="resultList" prefHeight="200.0" prefWidth="200.0" />
+    <Text fx:id="errorText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+    <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="580.0" spacing="5.0">
+      <children>
+        <Button mnemonicParsing="false" text="Search Book" onAction="#searchBook"/>
+        <TextField fx:id="searchBox" prefWidth="200.0" />
+      </children>
+    </HBox>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+</VBox>

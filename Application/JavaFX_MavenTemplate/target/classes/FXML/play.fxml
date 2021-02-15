@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="play" alignment="TOP_CENTER" layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="700.0" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Controller">
+  <children>
+    <Text fx:id="levelText" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the level for the AI players">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Text>
+    <HBox alignment="CENTER" prefHeight="83.0" prefWidth="700.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+          <children>
+            <Text fx:id="playerXText" strokeType="OUTSIDE" strokeWidth="0.0" text="player X" />
+            <HBox fx:id="xLevelHBox" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="300.0">
+              <children>
+                <Button fx:id="x1" focusTraversable="false" mnemonicParsing="false" onAction="#selectXLevel" text="Novice" />
+                <Button fx:id="x2" focusTraversable="false" mnemonicParsing="false" onAction="#selectXLevel" text="Advanced" />
+                <Button fx:id="x3" focusTraversable="false" mnemonicParsing="false" onAction="#selectXLevel" text="Expert" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="300.0" spacing="10.0">
+          <children>
+            <Text fx:id="playerOText" strokeType="OUTSIDE" strokeWidth="0.0" text="Player O" />
+            <HBox fx:id="oLevelHBox" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="300.0">
+              <children>
+                <Button fx:id="o1" focusTraversable="false" mnemonicParsing="false" onAction="#selectOLevel" text="Novice" />
+                <Button fx:id="o2" focusTraversable="false" mnemonicParsing="false" onAction="#selectOLevel" text="Advanced" />
+                <Button fx:id="o3" focusTraversable="false" mnemonicParsing="false" onAction="#selectOLevel" text="Expert" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <VBox alignment="TOP_CENTER" prefHeight="65.0" prefWidth="700.0" spacing="10.0">
+      <children>
+        <Text fx:id="numText" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose the number of games" />
+        <HBox fx:id="numHBox" alignment="TOP_CENTER" prefHeight="41.0" prefWidth="700.0">
+          <children>
+            <Button fx:id="num1" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="1" />
+            <Button fx:id="num2" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="2" />
+            <Button fx:id="num3" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="3" />
+            <Button fx:id="num4" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="4" />
+            <Button fx:id="num5" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="5" />
+            <Button fx:id="num6" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="6" />
+            <Button fx:id="num7" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="7" />
+            <Button fx:id="num8" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="8" />
+            <Button fx:id="num9" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="9" />
+            <Button fx:id="num10" focusTraversable="false" mnemonicParsing="false" onAction="#selectNumberOfGames" prefWidth="50.0" text="10" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+    <VBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="700.0" spacing="10.0">
+      <children>
+        <Text fx:id="startText" strokeType="OUTSIDE" strokeWidth="0.0" text="Please press start button to start the game" />
+        <Button fx:id="startGame" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#startGame" text="Start Game" />
+      </children>
+    </VBox>
+    <HBox id="HBox" alignment="TOP_CENTER" prefHeight="191.0" prefWidth="700.0" spacing="5.0">
+      <children>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="250.0">
+          <children>
+            <Text fx:id="xWonText" strokeType="OUTSIDE" strokeWidth="0.0" text="Player X Won" />
+            <Text fx:id="xWon" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+              <font>
+                <Font size="100.0" fx:id="x5" />
+              </font>
+            </Text>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="186.0" prefWidth="216.0">
+          <children>
+            <HBox alignment="TOP_CENTER" prefHeight="51.0" prefWidth="401.0">
+              <children>
+                <Button fx:id="b1" contentDisplay="CENTER" focusTraversable="false" graphicTextGap="4.0" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="">
+                  <font>
+                    <Font size="22.0" fx:id="x4" />
+                  </font>
+                  <HBox.margin>
+                    <Insets />
+                  </HBox.margin>
+                </Button>
+                <Button fx:id="b2" focusTraversable="false" font="$x4" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+                <Button fx:id="b3" focusTraversable="false" font="$x4" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+              </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="51.0" prefWidth="401.0">
+              <children>
+                <Button fx:id="b4" focusTraversable="false" font="$x4" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+                <Button fx:id="b5" focusTraversable="false" font="$x4" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+                <Button fx:id="b6" focusTraversable="false" font="$x4" maxHeight="50.0" maxWidth="50.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+              </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="51.0" prefWidth="401.0">
+              <children>
+                <Button fx:id="b7" focusTraversable="false" font="$x4" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+                <Button fx:id="b8" focusTraversable="false" font="$x4" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+                <Button fx:id="b9" focusTraversable="false" font="$x4" mnemonicParsing="false" mouseTransparent="true" prefHeight="50.0" prefWidth="50.0" text="" />
+              </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="32.0" prefWidth="216.0">
+              <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ROUND " />
+                <Text fx:id="numRound" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="251.0">
+          <children>
+            <Text fx:id="oWonText" strokeType="OUTSIDE" strokeWidth="0.0" text="Player O Won" />
+            <Text fx:id="oWon" font="$x5" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <VBox alignment="TOP_CENTER" prefHeight="102.0" prefWidth="700.0" spacing="10.0">
+      <children>
+        <Text fx:id="choiceText" strokeType="OUTSIDE" strokeWidth="0.0" text="Press next game button to play next game &#10;or new game button to start a new game set" />
+        <HBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="700.0">
+          <children>
+            <Button fx:id="nextGame" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#nextGame" text="Next Game" />
+            <Button fx:id="newGame" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#newGame" text="New Game" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</VBox>

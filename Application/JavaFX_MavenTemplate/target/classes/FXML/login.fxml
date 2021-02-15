@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="login" layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="LoginController">
+  <children>
+    <HBox alignment="CENTER" prefHeight="386.0" prefWidth="600.0">
+      <children>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <TextField fx:id="userNameText" prefWidth="200.0" text="root" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <TextField fx:id="passwordText" prefWidth="200.0" text="aaaa" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Host" />
+            <TextField fx:id="hostText" prefWidth="200.0" text="localhost" />
+            <Button mnemonicParsing="false" onAction="#login" text="Connect" />
+            <Text fx:id="errorText" disable="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Failed to connect to server" visible="false" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</VBox>

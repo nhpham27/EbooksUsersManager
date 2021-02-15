@@ -1,0 +1,35 @@
+#play{
+	-fx-background-color: #B0F8EC;
+}
+
+#levelText{
+	-fx-font-size: 20px;
+}
+
+#numText{
+	-fx-font-size: 20px;
+}
+
+#startText{
+	-fx-font-size: 20px;
+}
+
+#choiceText{
+	-fx-font-size: 20px;
+}
+
+#playerXText{
+	-fx-font-size: 20px;
+}
+
+#playerOText{
+	-fx-font-size: 20px;
+}
+
+#oWonText{
+	-fx-font-size: 20px;
+}
+
+#xWonText{
+	-fx-font-size: 20px;
+}
